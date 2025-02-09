@@ -41,11 +41,9 @@ const SeminarList: React.FC<SeminarListProps> = ({ seminars }) => {
     // Приводим даты из 13.02.2025 в 2025-02-13 иначе дата собьёться при изменении
     const formatDate = (dateString: string) => {
 
+        // Тут по идеи можно проверять строку с датой
+
         const parts = dateString.split('.');
-        // if (parts.length !== 3) {
-        //   return null; // Invalid format
-        // }
-        
         const day = parts[0];
         const month = parts[1];
         const year = parts[2];
@@ -255,9 +253,9 @@ const SeminarList: React.FC<SeminarListProps> = ({ seminars }) => {
 
     type Row = (typeof seminars)[number];
 
-    // const columns: GridColDef<(typeof React.FC<SeminarListProps>)[number]>[] = [
+
     /**
-     * Список полей в таблице
+     * Список полей в грид-таблице
      */
     const columns = React.useMemo<GridColDef<Row>[]>(
             () => [
@@ -331,7 +329,7 @@ const SeminarList: React.FC<SeminarListProps> = ({ seminars }) => {
     );
 
     /**
-     * Вывод сеинаров в виде гридов
+     * Вывод семинаров в виде гридов
      */
     return (
         <>
