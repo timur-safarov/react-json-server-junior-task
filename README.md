@@ -11,8 +11,8 @@ Directions
 
 	db/                     contains json file for json server
 	src/                    contains project files
-   src/assets/             contains assets definition
-   src/components/         contains project components
+	src/assets/             contains assets definition
+	src/components/         contains project components
 
 Prerequisites
 -------------
@@ -63,28 +63,28 @@ Prerequisites
 Instalation for Distribution Linux - Ubuntu
 -------------------------------------------
 
-## 0). Перейдите в директорию проекта
+### 0). Перейдите в директорию проекта
 * ``` cd /path-react-app/ ```
 
-## 1). Установить nodejs.
+### 1). Установить nodejs.
 * ``` sudo apt-get install nodejs ```
 
-## 2). Установить менеджер пакетов npm
+### 2). Установить менеджер пакетов npm
 * ``` sudo apt-get install npm ```
 
 - Убедитесь что установили правильно
 * ``` node -v ```
 * ``` npm -v ```
 
-## 3). Установить пакеты из файла package.json
+### 3). Установить пакеты из файла package.json
 * ``` sudo npm install ```
 
-## 4). Запустите JSON-сервер, введя эту команду в свой терминал
+### 4). Запустите JSON-сервер, введя эту команду в свой терминал
 * ``` npm run server ```
 
 - Убедитесь что JSON-SERVER работает перейдя по ссылки в терминале
 
-## 5). Запустите проект введя в консоли команду
+### 5). Запустите проект введя в консоли команду
 * ``` npm run dev ```
 
 - Если вы перезалили файл ./db/seminars.json
