@@ -8,7 +8,8 @@
 
 Directions
 ----------
-   db/                     contains json file for json server
+
+	db/                     contains json file for json server
 	src/                    contains project files
    src/assets/             contains assets definition
    src/components/         contains project components
